@@ -1,0 +1,41 @@
+body {
+  background-color: rgb(201, 187, 158);
+}
+
+.container {
+  max-width: 1440px;
+  text-align: center;
+}
+
+.table {
+  display: grid;
+  grid-template-columns: repeat(6, fit-content(100%));
+  gap: 1%;
+}
+.table div {
+  border: 1px solid black;
+}
+div[data-err="10003"] {
+  background-color: #048a81;
+}
+div[data-err="10004"] {
+  background-color: #06d6a0;
+}
+div[data-err="10012"] {
+  background-color: #54c6eb;
+}
+div[data-err="10001"] {
+  background-color: #8a89c0;
+}
+
+div[data-err="20010"] {
+  background-color: #cda2ab;
+}
+
+div[data-value="true"] {
+  background: #e40000;
+}
+
+div[data-value="false"] {
+  background: #fff;
+}
